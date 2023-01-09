@@ -6,10 +6,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Art of Transition Foundation - Home</title>
+        <title>@Umbraco.RenderMacro("atMeta")</title>
         <meta name="author" content="Art of Transition">
         <meta name="robots" content="index,follow,noodp,noydir" />
-        <link rel="shortcut icon" href="./img/favicon.ico" />
+        <link rel="shortcut icon" href="/css/at/img/favicon.ico" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,100italic,200italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -24,54 +24,15 @@
             <!-- Start Header Area -->
             <header class="section-header">
                 <div class="container-fluid">
-                    <div class="d-none d-md-block top-nav">
-        <div class="d-flex justify-content-between align-items-center">
-            <nav class="navbar">
-                <a class="navbar-brand" href="/">
-                    <img src="./css/logo.png" alt="Art of Transition logo">
-                </a>
-                <span class="nav-title"></span>
-            </nav>
-            <div class="d-flex align-items-center">
-                <nav class="d-none" id="atnav">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-<li class="nav-item dropdown disabled"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us</a><div class="dropdown-menu"><a href="/about-us/our-work" class="dropdown-item">Our work</a><a href="/about-us/theory-of-change" class="dropdown-item">Theory of change</a><a href="/about-us/organization" class="dropdown-item">Organization</a><a href="/about-us/support-us" class="dropdown-item">Support us</a></div</li><li class="nav-item dropdown disabled"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activities</a><div class="dropdown-menu"><a href="/activities/training" class="dropdown-item">Training</a><a href="/activities/social-lab" class="dropdown-item">Social lab</a><a href="/activities/advice-and-cooperation" class="dropdown-item">Advice and cooperation</a></div</li>                    </ul>
-                </nav>
-                <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
-
-            </div>
-        </div>
-        <div class="col-12"><div class="d-flex justify-content-end"><div class="switch"><a href="http://www.artoftransition.nl/">NL</a><span>EN</span></div></div></div>
-    </div>
-    <div class="d-md-none mob-nav">
-        <nav class="navbar">
-            <a class="navbar-brand" href="/">
-                <img src="/css/at/img/logo.png" alt="Art of Transition logo">
-            </a>
-            <div class="mob-bar ml-auto"><span class="lnr lnr-menu"></span></div>
-        </nav>
-
-        <div class="mob-menu d-none" id="mobnav">           
-            <div class="row">
-
-
-
-                <div class="col-sm-6"><span>About us</span><ul class="unordered-list"><li class="list-item"><a class="nav-link" href="/">Home</a></li><li class="list-item"><a href="/about-us/our-work" class="nav-link">Our work</a></li><li class="list-item"><a href="/about-us/theory-of-change" class="nav-link">Theory of change</a></li><li class="list-item"><a href="/about-us/organization" class="nav-link">Organization</a></li><li class="list-item"><a href="/about-us/support-us" class="nav-link">Support us</a></li></ul></div><div class="col-sm-6"><span>Activities</span><ul class="unordered-list"><li class="list-item"><a href="/activities/training" class="nav-link">Training</a></li><li class="list-item"><a href="/activities/social-lab" class="nav-link">Social lab</a></li><li class="list-item"><a href="/activities/advice-and-cooperation" class="nav-link">Advice and cooperation</a></li></ul></div><div class="switch"><a href="http://www.artoftransition.nl/">NL</a><span>EN</span></div>
-                </div>
-                
-            </div>
-        </div>                   
+                    Umbraco.RenderMacro("atTopNav")                   
                 </div>
             </header>
             <!-- End Header Area -->
-            <div>RenderBody()</div>
+            RenderBody()
             <!-- Start Footer Area -->
             <footer class="section-footer">
                 <div class="container">
-                    
+                    Umbraco.RenderMacro("atFooter")
                 </div>
             </footer>
             <!-- End Footer Area -->
@@ -79,11 +40,12 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <div>Umbraco.RenderMacro("atGACode")</div>
-        <script src="/js/at/main.js"></script>
+        Umbraco.RenderMacro("atGACode")
+        <script src="./js/main.js"></script>
     </body>
 
 </html>
+        
 
 
 
